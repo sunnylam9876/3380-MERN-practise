@@ -14,7 +14,8 @@ const BookData = require('./data/BookData');
 
 //--------------------------------------------------------------------------------
 //connection to MongoDB
-const uri = 'mongodb://127.0.0.1:27017/myBookDB';
+//const uri = 'mongodb://127.0.0.1:27017/myBookDB';
+const uri = 'mongodb+srv://twoods9876:12345@cluster0.gq69qma.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(uri);
 const connection = mongoose.connection;
 connection.once('open', () => {
